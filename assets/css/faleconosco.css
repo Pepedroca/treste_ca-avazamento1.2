@@ -1,0 +1,424 @@
+* {
+	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+}
+
+body {
+	background-color: #2c3e50;
+}
+/* Header/Blog Title */
+.header-2 {
+  padding: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.055);
+  color: white;
+
+}
+
+/* header*/
+header {
+    width: 100%;
+    background-color: #000000;
+    position: sticky;
+    z-index: 11;
+    top: 0px;
+    height: auto;
+}
+
+#logo {
+    line-height: 60px;
+    margin-left: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    color: #00a7ff;
+}
+
+.sign {
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+}
+
+.sign a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#logo:hover #logo-s {
+    color: #00a7ff;
+}
+
+#logo:hover {
+    color: #eef9ff;
+}
+
+#logo-s {
+    color: #eef9ff;
+    margin-left: 5px;
+}
+/* end header*/
+.header-2 h1 {
+  font-size: 50px;
+  
+}
+
+.sign a{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.sign a:hover{
+	color: #00a7ff; /* blue */
+	border-color: #00a7ff; /* blue */
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  position: sticky;
+  z-index: 11;
+  top: 0px;
+}
+
+.topnav span {
+	transition: 0.5s;
+}
+
+
+.topnav h1 span:hover  {
+	color: rgb(14, 123, 224);
+}
+
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin: 10px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  border:1px solid rgb(14, 123, 224);
+  border-radius: 10px;
+  color: rgb(14, 123, 224);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+	
+  float: left;
+  width: 25%;
+  background-color: #2c3e5049;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* FOOTER */
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+
+@media (max-width:500px) {
+
+	/* footer {
+		position: absolute;
+	} */
+
+	.footer-menu ul{
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	}
+}
+/* END FOOTER */
+
+/* FORM */
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+  }
+  
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+  }
+  
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  .container {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+  
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+  }
+  
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+/* END Form */
+
+/* ver mais */
+.aside a {
+    text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+.aside {
+
+    font-family: 20px;
+	width: 399px;
+	margin-left: auto;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #f1f1f1;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media (max-width:1000px){
+	.aside {
+        width: 224px;
+	}
+}
+.more{
+	display: none;
+}
+
+#myBtn:not(:last-child){
+	margin-bottom: 30px;
+}
+#read {
+	margin-top: 15px;
+	display: block;
+	background-color: #e41d3f;
+	color: white;
+	border:none;
+	outline: none;
+	padding: 8px 20px;
+	text-transform: capitalize;
+	cursor: pointer;
+	font-size: 20px;
+	transition: 0.3s;
+}
+
+#more{
+	display: none;
+}
+
+#myBtne:not(:last-child){
+	margin-bottom: 30px;
+}
+#myBtn {
+	margin-top: 15px;
+	display: block;
+	background-color: #e41d3f;
+	color: white;
+	border:none;
+	outline: none;
+	padding: 8px 20px;
+	text-transform: capitalize;
+	cursor: pointer;
+	font-size: 20px;
+	transition: 0.3s;
+}
+/* end ver mais */

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700|Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets\css\faleconosco.css">
+
+</head>
+<body>
+
+<div class="header-2">
+  <h1>Fale conosco</h1>
+  <p>HOME / Fale conosco </p>
+</div>
+
+<header>	
+	<div id="logo">CAÇA <span id="logo-s">VAZAMENTO</span></div>
+	<span class="sign"><a class="act" href="index.html">home</a></span>
+	<span class="sign"><a class="act" href="serviços.html">serviços</a></span>
+	<span class="sign"><a class="act" href="faleconosco.html">Fale conosco</a></span>
+	<span class="sign"><a class="act" href="#">(11) 97184-0277</a></span>
+</header>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+		<h2>Nós mande uma mensagem</h2>
+
+		<div class="container">
+			<form action="/action_page.php">
+			<div class="row">
+			  <div class="col-25">
+				<label for="fname">Nome</label>
+			  </div>
+			  <div class="col-75">
+				<input type="text" id="fname" name="firstname" placeholder="Seu nome">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-25">
+				<label for="lname" style="font-size: 15px;">Sobrenome</label>
+			  </div>
+			  <div class="col-75">
+				<input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-25">
+				<label for="country" >Rigião</label>
+			  </div>
+			  <div class="col-75">
+				<select id="country" name="country">
+
+
+				</select>
+
+				<script>
+
+					var lista = ['Freguesia do Ó', ' Limão', ' Vila Guilherme', ' Vila Maria', ' Imirim', ' Cantareira', ' Cachoeirinha', ' Casa Verde', ' Horto', ' Tremembé', ' Tucuruvi', ' Jaçanã', ' Mandaqui', ' Água Fria', ' Lauzane ', 'Jardim do Colégio', 'Jardim Guanandi', 'Imirim', 'Vila Mariza Mazzei', 'Vila Matias', 'Vila Pauliceia', 'Vila Rabelo', 'Jardim Santa Luzia', 'Santa Terezinha', 'Santana', 'Vila Santana', 'Jardim São Paulo', 'Vila Siciliano', 'Vila Albertina', 'Jardim Ataliba Leonel', 'Vila Aurora', 'Barro Branco', 'Vila Constança', 'Vila Gustavo', 'Parque Anhanguera', 'Jardim Britânia', 'BRASILÂNDIA', 'JardimAlmanara', 'vila penteado', 'Jardim Princesa', 'Vila Real', 'Jardim Recanto', 'Vila Rica', 'Vila São Joao Batista', 'Vila São Joaquim',' Vila Serralheiro', 'Vila Souza', 'Vila Terezinha', 'ParqueTiete', 'Jardim do Tiro', ' VistaAlegre', 'Vila Zulmira', 'Vila Maria', 'CACHOEIRINHA', 'Vila Amália', 'Vila Cachoeira', 'Vila Amélia', 'Vila dos Andrades', 'Vila Angélica', ' Cj Hab Jardim Antártica', 'Vila Bela Vista', 'Vila Cachoeirinha', 'Campo da Água Branca', 'Sitio Casa Verde', 'Jardim Ceci', 'Vila Celeste', 'Jardim Centenário', 'Vila Continental', 'Vila Dionísia', 'Jardim Flamingo', 'Jardim Imirim', 'JardimNossa Senhora da Consolata', 'Cohab Vila Nova Cachoeirinha', 'Vila Nova Cachoeirinha', 'VilaPauloRaveli', 'Jardim Peri Alto', 'Jardim Peri Novo', 'Jardim Peri', 'Vila Pita', 'Vila Roque', 'JardimSanta Cruz', 'Vila Vista Alegre', 'CASA VERDE', 'Vila Bandeirantes', 'Vila Baruel']
+					
+					let country = document.querySelector('#country');
+					
+					for(let bairro in lista) {
+						
+						country.innerHTML = '<option>'+lista[bairro]+'</option>'
+						
+						let option = document.createElement.country
+						console.log(lista[bairro])
+					}
+					
+				  </script>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-25">
+				<label for="subject">Mensagem</label>
+			  </div>
+			  <div class="col-75">
+				<textarea id="subject" name="subject" placeholder="Sua mensagem" style="height:200px"></textarea>
+			  </div>
+			</div>
+			<br>
+			<div class="row">
+			  <input type="submit" value="Enviar">
+			</div>
+			</form>
+		  </div>
+		  <div class="card">
+			<h3>Aceitamos como pagamento:</h3>
+			<img src="https://www.freeiconspng.com/uploads/checkbook-icon-13.png" style="width: 50px; height: 50px;" alt="">
+			<p>Cheque</p>
+			
+			<img src="https://images.emojiterra.com/google/android-pie/512px/1f4b3.png" style="width: 50px; height: 50px;" alt="">
+			<p>Cartão de crédito</p>
+	
+			<img src="https://images.emojiterra.com/twitter/v13.1/512px/1f4b5.png" style="width: 50px; height: 50px; float: rigth;" alt="">
+			<p>Dinheiro</p>
+		</div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Fala conosco</h2>
+      <img src="https://psfonttk.com/wp-content/uploads/2020/05/%F0%9F%93%9E-Emoji-Telefone.png" style="width: 100%; height: 160px;" alt="">
+      <p>Nos ligue Nos mande uma mensagem.</p>
+    </div>
+
+
+    <div class="aside">
+        <h1>Bairros que atendemos na Zona Norte:</h1>
+            <div><a href="">Santana</a><br></div>
+            
+            <div><a href="">Freguesia do Ó</a><br></div>
+            
+            <div><a href="">Vila Guilherme</a><br></div>
+            
+            <div><a href="">Vila Maria</a><br></div>
+            
+            <div><a href="">Cantareira</a><br></div>
+            
+            <div><a href="">Cachoeirinha</a><br></div>
+            
+            <div><a href="">Casa Verde</a><br></div>
+            
+            <div><a href="">Horto</a><br></div>
+            
+            <div><a href="">Tremembé</a><br></div>
+            
+            <div><a href="">Tucuruvi</a><br></div>
+            
+            <div><a href="">Jaçanã</a><br></div>
+            
+            <div><a href="">Mandaqui</a><br></div>
+            
+            <div><a href="">Água Fria</a><br></div>
+            
+    
+        <span id="dots">...</span>
+        <span id="more">
+            <div><a href="">Lauzane </a><br></div>
+            
+            <div><a href="">Jardim do Colégio</a><br></div>
+            
+            <div><a href="">Jardim Guanandi</a><br></div>
+            
+            <div><a href="">Imirim</a><br></div>
+            
+            <div><a href="">Vila Mariza Mazzei</a><br></div>
+            
+            <a href="">Vila Matias</a><br>
+            
+            <a href="">Vila Pauliceia</a><br>
+            
+            <a href="">Vila Rabelo</a><br>
+            
+            <a href="">Jardim Santa Luzia</a><br>
+            
+            <a href="">Santa Terezinha</a><br>
+            
+            <a href="">Vila Santana</a><br>
+            
+            <a href="">Jardim São Paulo</a><br>
+            
+            <a href="">Vila Siciliano</a><br>
+            
+            <a href="">Vila Albertina</a><br>
+            
+            <a href="">Jardim Ataliba Leonel</a><br>
+            
+            <a href="">Vila Aurora</a><br>
+            
+            <a href="">Barro Branco</a><br>
+            
+            <a href="">Vila Constança</a><br>
+            
+            <a href="">Vila Gustavo</a><br>
+            
+            <a href="">Parque Anhanguera</a><br>
+            
+            <a href="">Jardim Britânia</a><br>
+            
+            <a href="">BRASILÂNDIA</a><br>
+            
+            <a href="">Jardim Almanara</a><br>
+            
+            <a href="">vila penteado</a><br>
+            
+            <a href="">Jardim Princesa</a><br>
+            
+            <a href="">Vila Real</a><br>
+            
+            <a href="">Jardim Recanto</a><br>
+            
+            <a href="">Vila Rica</a><br>
+            
+            <a href="">Vila São Joao Batista</a><br>
+            
+            <a href="">Vila São Joaquim</a><br>
+            
+            <a href="">Vila Serralheiro</a><br>
+            
+            <a href="">Vila Souza</a><br>
+            
+            <a href="">Vila Terezinha</a><br>
+            
+            <a href="">Parque Tiete</a><br>
+            
+            <a href="">Jardim do Tiro</a><br>
+            
+            <a href="">Vista Alegre</a><br>
+            
+            <a href="">Vila Zulmira,</a><br>
+            
+            <a href="">Vila Maria</a><br>
+            
+            <a href="">CACHOEIRINHA</a><br>
+            
+            <a href="">Vila Amália</a><br>
+            
+            <a href="">Vila Cachoeira</a><br>
+            
+            <a href="">Vila Amélia</a><br>
+            
+            <a href="">Vila dos Andrades</a><br>
+            
+            <a href="">Vila Angélica</a><br>
+            
+            <a href="">Jardim Antártica</a><br>
+            
+            <a href="">Bela Vista</a><br>
+            
+            <a href="">Campo da Água Branca</a><br>
+            
+            <a href="">Sitio Casa Verde</a><br>
+            
+            <a href="">Jardim Ceci,</a><br>
+            
+            <a href="">Vila Celeste</a><br>
+            
+            <a href="">Jardim Centenário</a><br>
+            
+            <a href="">Vila Continental,</a><br>
+            
+            <a href="">Vila Dionísia</a><br>
+            
+            <a href="">Jardim Flamingo</a><br>
+            
+            <a href="">Jardim Imirim</a><br>
+            
+            <a href="">Jardim Nossa Senhora da Consolata</a><br>
+            
+            <a href="">Cohab Vila Nova Cachoeirinha</a><br>
+            
+            <a href="">Vila Nova Cachoeirinha</a><br>
+            
+            <a href="">VilaPauloRaveli,</a><br>
+            
+            <a href="">Jardim Peri Alto</a><br>
+            
+            <a href="">Jardim Peri Novo</a><br>
+            
+            <a href="">Jardim Peri</a><br>
+            
+            <a href="">Vila Pita</a><br>
+            
+            <a href="">Vila Roque</a><br>
+            
+            <a href="">JardimSanta Cruz</a><br>
+            
+            <a href="">Vila Vista Alegre</a><br>
+        </span>
+    
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+    
+        <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<footer>
+	<div class="footer-content">
+		<h3>CAÇA VAZAMENTO</h3>
+		<p>Trabalhamos 7 dias por semana, todos os dias, exceto feriados importantes. Contate-nos se tiver uma emergência <a href="">CLIQUE AQUI</a> </p>
+		<ul class="socials">
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+		</ul>
+	</div>
+	<div class="footer-bottom">
+		<p>CAÇA &copy; <a href="#">VAZAMENTO</a>  </p>
+				<div class="footer-menu">
+				<ul class="f-menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Blog</a></li>
+				</ul>
+				</div>
+	</div>
+</footer>
+<!-- end footer -->
+</body>
+</html>
+
+

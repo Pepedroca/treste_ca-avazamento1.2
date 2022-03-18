@@ -1,0 +1,59 @@
+
+#form {
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125em;
+}
+
+#form label, #form input, #form textarea, #form #enviar {
+    display: block;
+    width: 100%;
+} 
+
+
+
+#form label {
+    color: rgb(3, 3, 3);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+#form input, #form textarea{
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: boder-color,
+    box-shadow  0.2s;
+}
+
+#form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+#form input:hover, #form input:focus , #form textarea:hover , #form textarea:focus {
+    outline: none;
+    border: wheat;
+    box-shadow: 0 0 0 3px wheat;
+}
+
+
+#form #enviar {
+    display: block;
+    padding: 1rem;
+    background-color: rgb(24, 45, 163);
+    color: white;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#form #enviar:hover, #form #enviar:focus {
+    outline: none;
+    background-color: #09d;
+}

@@ -1,0 +1,6 @@
+bairros = """Freguesia do Ó, Limão, Vila Guilherme, Vila Maria, Imirim, Cantareira, Cachoeirinha, Casa Verde, Horto, Tremembé, Tucuruvi, Jaçanã, Mandaqui, Água Fria, Lauzane ,Jardim do Colégio,Jardim Guanandi,Imirim,Vila Mariza Mazzei,Vila Matias,Vila Pauliceia,Vila Rabelo,Jardim Santa Luzia,Santa Terezinha,Santana,Vila Santana,Jardim São Paulo,Vila Siciliano,Vila Albertina,Jardim Ataliba Leonel,Vila Aurora,Barro Branco,Vila Constança,Vila Gustavo,Parque Anhanguera,Jardim Britânia,BRASILÂNDIA,JardimAlmanara,vila penteado,Jardim Princesa,Vila Real,Jardim Recanto,Vila Rica,Vila São Joao Batista,Vila São Joaquim, Vila Serralheiro,Vila Souza,Vila Terezinha,ParqueTiete,Jardim do Tiro, VistaAlegre,Vila Zulmira,Vila Maria,CACHOEIRINHA,Vila Amália,Vila Cachoeira,Vila Amélia,Vila dos Andrades,Vila Angélica, Cj Hab Jardim Antártica,Vila Bela Vista,Vila Cachoeirinha,Campo da Água Branca,Sitio Casa Verde,Jardim Ceci,Vila Celeste,Jardim Centenário,Vila Continental,Vila Dionísia,Jardim Flamingo,Jardim Imirim,JardimNossa Senhora da Consolata,Cohab Vila Nova Cachoeirinha,Vila Nova Cachoeirinha,VilaPauloRaveli,Jardim Peri Alto,Jardim Peri Novo,Jardim Peri,Vila Pita,Vila Roque,JardimSanta Cruz,Vila Vista Alegre,CASA VERDE,Vila Bandeirantes,Vila Baruel"""
+
+
+lista = bairros.split(',')
+
+print(len(lista))
