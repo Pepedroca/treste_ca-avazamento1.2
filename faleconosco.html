@@ -14,11 +14,11 @@
 </div>
 
 <header>	
-	<div id="logo">CAÇA <span id="logo-s">VAZAMENTO</span></div>
+  <div id="logo"><a href="index.html" style="text-decoration: none; color: rgb(0, 119, 255);">CAÇA <span id="logo-s">VAZAMENTO</span></a></div>
 	<span class="sign"><a class="act" href="index.html">home</a></span>
 	<span class="sign"><a class="act" href="serviços.html">serviços</a></span>
 	<span class="sign"><a class="act" href="faleconosco.html">Fale conosco</a></span>
-	<span class="sign"><a class="act" href="#">(11) 97184-0277</a></span>
+	<span class="sign"><a class="act" href="https://api.whatsapp.com/send?phone=55(11)97184-0277&text= Ola nos somos caça vazamento">(11) 97184-0277</a></span>
 </header>
 
 <div class="row">
@@ -46,7 +46,7 @@
 			</div>
 			<div class="row">
 			  <div class="col-25">
-				<label for="country" >Rigião</label>
+				<label for="country" >Bairro</label>
 			  </div>
 			  <div class="col-75">
 				<select id="country" name="country">
@@ -56,17 +56,19 @@
 
 				<script>
 
-					var lista = ['Freguesia do Ó', ' Limão', ' Vila Guilherme', ' Vila Maria', ' Imirim', ' Cantareira', ' Cachoeirinha', ' Casa Verde', ' Horto', ' Tremembé', ' Tucuruvi', ' Jaçanã', ' Mandaqui', ' Água Fria', ' Lauzane ', 'Jardim do Colégio', 'Jardim Guanandi', 'Imirim', 'Vila Mariza Mazzei', 'Vila Matias', 'Vila Pauliceia', 'Vila Rabelo', 'Jardim Santa Luzia', 'Santa Terezinha', 'Santana', 'Vila Santana', 'Jardim São Paulo', 'Vila Siciliano', 'Vila Albertina', 'Jardim Ataliba Leonel', 'Vila Aurora', 'Barro Branco', 'Vila Constança', 'Vila Gustavo', 'Parque Anhanguera', 'Jardim Britânia', 'BRASILÂNDIA', 'JardimAlmanara', 'vila penteado', 'Jardim Princesa', 'Vila Real', 'Jardim Recanto', 'Vila Rica', 'Vila São Joao Batista', 'Vila São Joaquim',' Vila Serralheiro', 'Vila Souza', 'Vila Terezinha', 'ParqueTiete', 'Jardim do Tiro', ' VistaAlegre', 'Vila Zulmira', 'Vila Maria', 'CACHOEIRINHA', 'Vila Amália', 'Vila Cachoeira', 'Vila Amélia', 'Vila dos Andrades', 'Vila Angélica', ' Cj Hab Jardim Antártica', 'Vila Bela Vista', 'Vila Cachoeirinha', 'Campo da Água Branca', 'Sitio Casa Verde', 'Jardim Ceci', 'Vila Celeste', 'Jardim Centenário', 'Vila Continental', 'Vila Dionísia', 'Jardim Flamingo', 'Jardim Imirim', 'JardimNossa Senhora da Consolata', 'Cohab Vila Nova Cachoeirinha', 'Vila Nova Cachoeirinha', 'VilaPauloRaveli', 'Jardim Peri Alto', 'Jardim Peri Novo', 'Jardim Peri', 'Vila Pita', 'Vila Roque', 'JardimSanta Cruz', 'Vila Vista Alegre', 'CASA VERDE', 'Vila Bandeirantes', 'Vila Baruel']
+					var lista = ['Freguesia do Ó', 'Limão', ' Vila Guilherme', ' Vila Maria', ' Imirim', ' Cantareira', ' Cachoeirinha', ' Casa Verde', ' Horto', ' Tremembé', ' Tucuruvi', ' Jaçanã', ' Mandaqui', ' Água Fria', 'Lauzane ', 'Jardim do Colégio', 'Jardim Guanandi', 'Imirim', 'Vila Mariza Mazzei', 'Vila Matias', 'Vila Pauliceia', 'Vila Rabelo', 'Jardim Santa Luzia', 'Santa Terezinha', 'Santana', 'Vila Santana', 'Jardim São Paulo', 'Vila Siciliano', 'Vila Albertina', 'Jardim Ataliba Leonel', 'Vila Aurora', 'Barro Branco', 'Vila Constança', 'Vila Gustavo', 'Parque Anhanguera', 'Jardim Britânia', 'BRASILÂNDIA', 'JardimAlmanara', 'vila penteado', 'Jardim Princesa', 'Vila Real', 'Jardim Recanto', 'Vila Rica', 'Vila São Joao Batista', 'Vila São Joaquim',' Vila Serralheiro', 'Vila Souza', 'Vila Terezinha', 'ParqueTiete', 'Jardim do Tiro', ' VistaAlegre', 'Vila Zulmira', 'Vila Maria', 'CACHOEIRINHA', 'Vila Amália', 'Vila Cachoeira', 'Vila Amélia', 'Vila dos Andrades', 'Vila Angélica', ' Cj Hab Jardim Antártica', 'Vila Bela Vista', 'Vila Cachoeirinha', 'Campo da Água Branca', 'Sitio Casa Verde', 'Jardim Ceci', 'Vila Celeste', 'Jardim Centenário', 'Vila Continental', 'Vila Dionísia', 'Jardim Flamingo', 'Jardim Imirim', 'JardimNossa Senhora da Consolata', 'Cohab Vila Nova Cachoeirinha', 'Vila Nova Cachoeirinha', 'VilaPauloRaveli', 'Jardim Peri Alto', 'Jardim Peri Novo', 'Jardim Peri', 'Vila Pita', 'Vila Roque', 'JardimSanta Cruz', 'Vila Vista Alegre', 'CASA VERDE', 'Vila Bandeirantes', 'Vila Baruel']
 					
 					let country = document.querySelector('#country');
-					
+          let todosBairros
 					for(let bairro in lista) {
+            
+            
+            todosBairros += '<option>'+lista[bairro]+'</option>'
 						
-						country.innerHTML = '<option>'+lista[bairro]+'</option>'
-						
-						let option = document.createElement.country
-						console.log(lista[bairro])
 					}
+          
+          console.log(todosBairros)
+          country.innerHTML = todosBairros
 					
 				  </script>
 			  </div>
@@ -299,14 +301,11 @@
 <footer>
 	<div class="footer-content">
 		<h3>CAÇA VAZAMENTO</h3>
-		<p>Trabalhamos 7 dias por semana, todos os dias, exceto feriados importantes. Contate-nos se tiver uma emergência <a href="">CLIQUE AQUI</a> </p>
+		<p>Trabalhamos 7 dias por semana, todos os dias, exceto feriados importantes. Contate-nos se tiver uma emergência <a href="https://api.whatsapp.com/send?phone=55(11)97184-0277&text= Ola nos somos caça vazamento">CLIQUE AQUI</a> </p>
 		<ul class="socials">
 			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="https://api.whatsapp.com/send?phone=55(11)97184-0277&text= Ola nos somos caça vazamento"><i class="fa fa-whatsapp"></i></a></li>
 			<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-			<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
 		</ul>
 	</div>
 	<div class="footer-bottom">
