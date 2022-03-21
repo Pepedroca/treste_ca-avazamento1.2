@@ -129,7 +129,6 @@ header {
 
 /* Right column */
 .rightcolumn {
-	
   float: left;
   width: 25%;
   background-color: #2c3e5049;
@@ -330,7 +329,7 @@ input[type=text], select, textarea {
   }
   
   .col-25 {
-	float: left;
+
 	width: 25%;
 	margin-top: 6px;
   }
@@ -375,11 +374,7 @@ input[type=text], select, textarea {
 	margin-top: 10px;
 }
 
-@media (max-width:1000px){
-	.aside {
-        width: 224px;
-	}
-}
+
 .more{
 	display: none;
 }
@@ -422,3 +417,37 @@ input[type=text], select, textarea {
 	transition: 0.3s;
 }
 /* end ver mais */
+
+/* inputs */
+#email {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+/* end inputs */
+
+@media (max-width:1000px) {
+  * {
+    font-size: 30px;
+  }
+
+  .telefone {
+    text-align: center;
+  }
+
+  .leftcolumn {
+    float: none;
+    width: 100%;
+  }
+
+  .rightcolumn {
+    width: 98%;
+  }
+
+  .aside {
+    margin-right: auto;
+    width: 100%;
+  }
+}

@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:700|Work+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets\css\servicos.css">
+  <link rel="stylesheet" href="assets\css\faleconosco.css">
 
 </head>
 <body>
@@ -57,48 +58,76 @@
     </div>
     <div class="card">
 		<div class="container">
-			<form action="/action_page.php">
-			<div class="row">
-			  <div class="col-25">
-				<label for="fname">Nome</label>
-			  </div>
-			  <div class="col-75">
-				<input type="text" id="fname" name="firstname" placeholder="Seu nome">
-			  </div>
-			</div>
-			<div class="row">
-			  <div class="col-25">
-				<label for="lname" style="font-size: 15px;">Sobrenome</label>
-			  </div>
-			  <div class="col-75">
-				<input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
-			  </div>
-			</div>
-			<div class="row">
-			  <div class="col-25">
-				<label for="country" >Bairro</label>
-			  </div>
-			  <div class="col-75">
-				<select id="country" name="country">
-				  <option value="australia">Australia</option>
-				  <option value="canada">Canada</option>
-				  <option value="usa">USA</option>
-				</select>
-			  </div>
-			</div>
-			<div class="row">
-			  <div class="col-25">
-				<label for="subject">Mensagem</label>
-			  </div>
-			  <div class="col-75">
-				<textarea id="subject" name="subject" placeholder="Sua mensagem" style="height:200px"></textarea>
-			  </div>
-			</div>
-			<br>
-			<div class="row">
-			  <input type="submit" value="Enviar">
-			</div>
-			</form>
+      <form action="https://formsubmit.co/pedroagusto885@gmail.com" method="POST">
+        <div class="row">
+          <div class="col-25">
+          <label for="fname">Nome</label>
+          </div>
+          <div class="col-75">
+          <input type="text" id="fname" name="nome" placeholder="Seu nome">
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-25">
+          <label for="lname" style="font-size: 15px;">Sobrenome</label>
+          </div>
+          <div class="col-75">
+          <input type="text" id="lname" name="sobrenome" placeholder="Seu sobrenome">
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-25">
+          <label for="lname" style="font-size: 15px;">Email</label>
+          </div>
+          <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Seu email">
+          </div>
+        </div>
+  
+        <input type="hidden" name="_captcha" value="false">
+        <div class="row">
+          <div class="col-25">
+          <label for="country" >Bairro</label>
+          </div>
+          <div class="col-75">
+          <select id="country" name="bairro">
+            <script>
+  
+              var lista = ['Freguesia do Ó', 'Limão', ' Vila Guilherme', ' Vila Maria', ' Imirim', ' Cantareira', ' Cachoeirinha', ' Casa Verde', ' Horto', ' Tremembé', ' Tucuruvi', ' Jaçanã', ' Mandaqui', ' Água Fria', 'Lauzane ', 'Jardim do Colégio', 'Jardim Guanandi', 'Imirim', 'Vila Mariza Mazzei', 'Vila Matias', 'Vila Pauliceia', 'Vila Rabelo', 'Jardim Santa Luzia', 'Santa Terezinha', 'Santana', 'Vila Santana', 'Jardim São Paulo', 'Vila Siciliano', 'Vila Albertina', 'Jardim Ataliba Leonel', 'Vila Aurora', 'Barro Branco', 'Vila Constança', 'Vila Gustavo', 'Parque Anhanguera', 'Jardim Britânia', 'BRASILÂNDIA', 'JardimAlmanara', 'vila penteado', 'Jardim Princesa', 'Vila Real', 'Jardim Recanto', 'Vila Rica', 'Vila São Joao Batista', 'Vila São Joaquim',' Vila Serralheiro', 'Vila Souza', 'Vila Terezinha', 'ParqueTiete', 'Jardim do Tiro', ' VistaAlegre', 'Vila Zulmira', 'Vila Maria', 'CACHOEIRINHA', 'Vila Amália', 'Vila Cachoeira', 'Vila Amélia', 'Vila dos Andrades', 'Vila Angélica', ' Cj Hab Jardim Antártica', 'Vila Bela Vista', 'Vila Cachoeirinha', 'Campo da Água Branca', 'Sitio Casa Verde', 'Jardim Ceci', 'Vila Celeste', 'Jardim Centenário', 'Vila Continental', 'Vila Dionísia', 'Jardim Flamingo', 'Jardim Imirim', 'JardimNossa Senhora da Consolata', 'Cohab Vila Nova Cachoeirinha', 'Vila Nova Cachoeirinha', 'VilaPauloRaveli', 'Jardim Peri Alto', 'Jardim Peri Novo', 'Jardim Peri', 'Vila Pita', 'Vila Roque', 'JardimSanta Cruz', 'Vila Vista Alegre', 'CASA VERDE', 'Vila Bandeirantes', 'Vila Baruel']
+              
+              let country = document.querySelector('#country');
+              let todosBairros
+              for(let bairro in lista) {
+                
+                
+                todosBairros += '<option>'+lista[bairro]+'</option>'
+                
+              }
+              
+              console.log(todosBairros)
+              country.innerHTML = todosBairros
+              
+              </script>
+  
+          </select>
+  
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+          <label for="subject">Mensagem</label>
+          </div>
+          <div class="col-75">
+          <textarea id="subject" name="mensagem" placeholder="Sua mensagem" style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Enviar">
+        </div>
+        </form>
 		  </div>
     </div>
     <div class="card">
@@ -138,20 +167,20 @@
             
             <div><a href="">Mandaqui</a><br></div>
             
-            <div><a href="">Água Fria</a><br></div>
+            <a href="">Água Fria</a><br>
             
     
         <span id="dots">...</span>
         <span id="more">
-            <div><a href="">Lauzane </a><br></div>
+            <a href="">Lauzane </a><br>
             
-            <div><a href="">Jardim do Colégio</a><br></div>
+            <a href="">Jardim do Colégio</a><br>
             
-            <div><a href="">Jardim Guanandi</a><br></div>
+            <a href="">Jardim Guanandi</a><br>
             
-            <div><a href="">Imirim</a><br></div>
+            <a href="">Imirim</a><br>
             
-            <div><a href="">Vila Mariza Mazzei</a><br></div>
+            <a href="">Vila Mariza Mazzei</a><br>
             
             <a href="">Vila Matias</a><br>
             

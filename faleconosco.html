@@ -2,7 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:700|Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700|Work+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets\css\faleconosco.css">
 
 </head>
@@ -27,50 +27,61 @@
 		<h2>Nós mande uma mensagem</h2>
 
 		<div class="container">
-			<form action="/action_page.php">
+			<form action="https://formsubmit.co/pedroagusto885@gmail.com" method="POST">
 			<div class="row">
 			  <div class="col-25">
 				<label for="fname">Nome</label>
 			  </div>
 			  <div class="col-75">
-				<input type="text" id="fname" name="firstname" placeholder="Seu nome">
+				<input type="text" id="fname" name="nome" placeholder="Seu nome">
 			  </div>
 			</div>
-			<div class="row">
+
+      <div class="row">
 			  <div class="col-25">
-				<label for="lname" style="font-size: 15px;">Sobrenome</label>
+				<label for="lname">Sobrenome</label>
 			  </div>
 			  <div class="col-75">
-				<input type="text" id="lname" name="lastname" placeholder="Seu sobrenome">
+				<input type="text" id="lname" name="sobrenome" placeholder="Seu sobrenome">
 			  </div>
 			</div>
+
+      <div class="row">
+			  <div class="col-25">
+				<label for="lname">Email</label>
+			  </div>
+			  <div class="col-75">
+				<input type="email" id="email" name="email" placeholder="Seu email">
+			  </div>
+			</div>
+
+      <input type="hidden" name="_captcha" value="false">
 			<div class="row">
 			  <div class="col-25">
 				<label for="country" >Bairro</label>
 			  </div>
 			  <div class="col-75">
-				<select id="country" name="country">
+				<select id="country" name="bairro">
+          <script>
 
+            var lista = ['Freguesia do Ó', 'Limão', ' Vila Guilherme', ' Vila Maria', ' Imirim', ' Cantareira', ' Cachoeirinha', ' Casa Verde', ' Horto', ' Tremembé', ' Tucuruvi', ' Jaçanã', ' Mandaqui', ' Água Fria', 'Lauzane ', 'Jardim do Colégio', 'Jardim Guanandi', 'Imirim', 'Vila Mariza Mazzei', 'Vila Matias', 'Vila Pauliceia', 'Vila Rabelo', 'Jardim Santa Luzia', 'Santa Terezinha', 'Santana', 'Vila Santana', 'Jardim São Paulo', 'Vila Siciliano', 'Vila Albertina', 'Jardim Ataliba Leonel', 'Vila Aurora', 'Barro Branco', 'Vila Constança', 'Vila Gustavo', 'Parque Anhanguera', 'Jardim Britânia', 'BRASILÂNDIA', 'JardimAlmanara', 'vila penteado', 'Jardim Princesa', 'Vila Real', 'Jardim Recanto', 'Vila Rica', 'Vila São Joao Batista', 'Vila São Joaquim',' Vila Serralheiro', 'Vila Souza', 'Vila Terezinha', 'ParqueTiete', 'Jardim do Tiro', ' VistaAlegre', 'Vila Zulmira', 'Vila Maria', 'CACHOEIRINHA', 'Vila Amália', 'Vila Cachoeira', 'Vila Amélia', 'Vila dos Andrades', 'Vila Angélica', ' Cj Hab Jardim Antártica', 'Vila Bela Vista', 'Vila Cachoeirinha', 'Campo da Água Branca', 'Sitio Casa Verde', 'Jardim Ceci', 'Vila Celeste', 'Jardim Centenário', 'Vila Continental', 'Vila Dionísia', 'Jardim Flamingo', 'Jardim Imirim', 'JardimNossa Senhora da Consolata', 'Cohab Vila Nova Cachoeirinha', 'Vila Nova Cachoeirinha', 'VilaPauloRaveli', 'Jardim Peri Alto', 'Jardim Peri Novo', 'Jardim Peri', 'Vila Pita', 'Vila Roque', 'JardimSanta Cruz', 'Vila Vista Alegre', 'CASA VERDE', 'Vila Bandeirantes', 'Vila Baruel']
+            
+            let country = document.querySelector('#country');
+            let todosBairros
+            for(let bairro in lista) {
+              
+              
+              todosBairros += '<option>'+lista[bairro]+'</option>'
+              
+            }
+            
+            console.log(todosBairros)
+            country.innerHTML = todosBairros
+            
+            </script>
 
 				</select>
 
-				<script>
-
-					var lista = ['Freguesia do Ó', 'Limão', ' Vila Guilherme', ' Vila Maria', ' Imirim', ' Cantareira', ' Cachoeirinha', ' Casa Verde', ' Horto', ' Tremembé', ' Tucuruvi', ' Jaçanã', ' Mandaqui', ' Água Fria', 'Lauzane ', 'Jardim do Colégio', 'Jardim Guanandi', 'Imirim', 'Vila Mariza Mazzei', 'Vila Matias', 'Vila Pauliceia', 'Vila Rabelo', 'Jardim Santa Luzia', 'Santa Terezinha', 'Santana', 'Vila Santana', 'Jardim São Paulo', 'Vila Siciliano', 'Vila Albertina', 'Jardim Ataliba Leonel', 'Vila Aurora', 'Barro Branco', 'Vila Constança', 'Vila Gustavo', 'Parque Anhanguera', 'Jardim Britânia', 'BRASILÂNDIA', 'JardimAlmanara', 'vila penteado', 'Jardim Princesa', 'Vila Real', 'Jardim Recanto', 'Vila Rica', 'Vila São Joao Batista', 'Vila São Joaquim',' Vila Serralheiro', 'Vila Souza', 'Vila Terezinha', 'ParqueTiete', 'Jardim do Tiro', ' VistaAlegre', 'Vila Zulmira', 'Vila Maria', 'CACHOEIRINHA', 'Vila Amália', 'Vila Cachoeira', 'Vila Amélia', 'Vila dos Andrades', 'Vila Angélica', ' Cj Hab Jardim Antártica', 'Vila Bela Vista', 'Vila Cachoeirinha', 'Campo da Água Branca', 'Sitio Casa Verde', 'Jardim Ceci', 'Vila Celeste', 'Jardim Centenário', 'Vila Continental', 'Vila Dionísia', 'Jardim Flamingo', 'Jardim Imirim', 'JardimNossa Senhora da Consolata', 'Cohab Vila Nova Cachoeirinha', 'Vila Nova Cachoeirinha', 'VilaPauloRaveli', 'Jardim Peri Alto', 'Jardim Peri Novo', 'Jardim Peri', 'Vila Pita', 'Vila Roque', 'JardimSanta Cruz', 'Vila Vista Alegre', 'CASA VERDE', 'Vila Bandeirantes', 'Vila Baruel']
-					
-					let country = document.querySelector('#country');
-          let todosBairros
-					for(let bairro in lista) {
-            
-            
-            todosBairros += '<option>'+lista[bairro]+'</option>'
-						
-					}
-          
-          console.log(todosBairros)
-          country.innerHTML = todosBairros
-					
-				  </script>
 			  </div>
 			</div>
 			<div class="row">
@@ -78,7 +89,7 @@
 				<label for="subject">Mensagem</label>
 			  </div>
 			  <div class="col-75">
-				<textarea id="subject" name="subject" placeholder="Sua mensagem" style="height:200px"></textarea>
+				<textarea id="subject" name="mensagem" placeholder="Sua mensagem" style="height:200px"></textarea>
 			  </div>
 			</div>
 			<br>
@@ -101,7 +112,7 @@
     </div>
   </div>
   <div class="rightcolumn">
-    <div class="card">
+    <div class="card telefone">
       <h2>Fala conosco</h2>
       <img src="https://psfonttk.com/wp-content/uploads/2020/05/%F0%9F%93%9E-Emoji-Telefone.png" style="width: 100%; height: 160px;" alt="">
       <p>Nos ligue Nos mande uma mensagem.</p>
