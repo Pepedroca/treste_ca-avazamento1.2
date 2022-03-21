@@ -454,8 +454,8 @@ input[type=text], select, textarea {
     height: 150px;
   }
 
-  aside div a{
-    font-size: 0px;
+  .aside div a {
+    font-size: 30px;
   }
 
 }

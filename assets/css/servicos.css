@@ -422,6 +422,9 @@
   /* end ver mais */
 
 @media (max-width:1000px) {
+  * {
+    font-size: 30px;
+  }
   header {
     height: 150px;
   }
