@@ -422,23 +422,16 @@
   /* end ver mais */
 
 @media (max-width:1000px) {
-  * {
-    font-size: 30px;
-  }
+
   header {
     height: 150px;
   }
 
-
   .rightcolumn {
-    font-size: 30px;
     text-align: center;
-
+    
   }
 
-  .col-25 label{
-    float: left;
-  }
 
   .col-25 {
 

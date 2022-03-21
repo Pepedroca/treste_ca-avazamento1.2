@@ -430,7 +430,7 @@ input[type=text], select, textarea {
 
 @media (max-width:1000px) {
   * {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .telefone {
@@ -454,8 +454,5 @@ input[type=text], select, textarea {
     height: 150px;
   }
 
-  .aside div a {
-    font-size: 30px;
-  }
 
 }
