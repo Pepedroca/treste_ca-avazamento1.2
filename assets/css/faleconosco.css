@@ -450,4 +450,13 @@ input[type=text], select, textarea {
     margin-right: auto;
     width: 100%;
   }
+  header {
+    height: 150px;
+
+  }
+
+  aside div a{
+    font-size: 0px;
+  }
+
 }
